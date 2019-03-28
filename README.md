@@ -38,7 +38,21 @@ tag_contact-email           = "big.red@domain.com"
 tag_customer                = "Data Team"
 ```
 
-<<<<<<< HEAD
 2. Run terraform init, plan and apply to build.
-=======
->>>>>>> 176aac8ddb6bf43c86cc62a69242ee0af6a763a9
+
+## Resources
+```
+  - aws_iam_access_key.user_keys
+  - aws_iam_role.redshift_s3readonlyaccess_role
+  - aws_iam_role_policy.redshift_s3readonlyaccess
+  - aws_iam_user.user
+  - aws_redshift_cluster.main_redshift_cluster
+  - aws_redshift_parameter_group.main_redshift_cluster
+  - aws_redshift_subnet_group.main_redshift_subnet_group
+  - aws_s3_bucket.bucket
+  - aws_s3_bucket_policy.bucket_policy
+  - aws_s3_bucket_public_access_block.bucket_public_access
+  - aws_security_group.main_redshift_access
+  - aws_security_group_rule.allow_all_outbound
+  - aws_security_group_rule.allow_port_inbound
+  ````
