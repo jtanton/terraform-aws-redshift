@@ -8,16 +8,17 @@ output "redshift_cluster_endpoint" {
   description = "The connection endpoint"
   value       = "${aws_redshift_cluster.main_redshift_cluster.endpoint}"
 }
+# Removed to keep these secure and not expose in clear text output
 
-output "redshift_master_username" {
-  description = "The connection endpoint"
-  value       = "${aws_redshift_cluster.main_redshift_cluster.master_username}"
-}
+# output "redshift_master_username" {
+#   description = "The connection endpoint"
+#   value       = "${aws_redshift_cluster.main_redshift_cluster.master_username}"
+# }
 
-output "redshift_master_password" {
-  description = "The connection endpoint"
-  value       = "${aws_redshift_cluster.main_redshift_cluster.master_password}"
-}
+# output "redshift_master_password" {
+#   description = "The connection endpoint"
+#   value       = "${aws_redshift_cluster.main_redshift_cluster.master_password}"
+# }
 
 output "redshift_cluster_id" {
   description = "The Redshift cluster ID"
@@ -138,6 +139,7 @@ output "iam_access_key_id" {
   value = "${aws_iam_access_key.user_keys.id}"
 }
 
-output "iam_access_key_secret" {
-  value = "${aws_iam_access_key.user_keys.secret}"
-}
+# Remove to secure key as well.  Only safe, if terraform state file are kept in secret location.
+# output "iam_access_key_secret" {
+#   value = "${aws_iam_access_key.user_keys.secret}"
+# }
