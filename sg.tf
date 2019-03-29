@@ -1,4 +1,7 @@
-# Security groups
+#
+# Module: Creates Security groups to control access to Redshift
+#
+
 resource "aws_security_group" "main_redshift_access" {
   name        = "${var.cluster_identifier}-redshift-access"
   description = "Allow access to the cluster: ${var.cluster_identifier}"
