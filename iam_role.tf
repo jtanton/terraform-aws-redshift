@@ -1,3 +1,6 @@
+#
+# Module: Creates IAM Role to Authorizing Amazon Redshift to Access S3 Service
+#
 
 resource "aws_iam_role" "redshift_s3readonlyaccess_role" {
   name = "${var.cluster_identifier}_role"

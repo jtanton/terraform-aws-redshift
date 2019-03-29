@@ -1,3 +1,6 @@
+#
+# Module: Creates bucket policy to allow Read and Write Access to Objects in an S3 Bucket
+#
 
 resource "aws_iam_role_policy" "redshift_s3readonlyaccess" {
   name = "${var.cluster_identifier}_policy"
