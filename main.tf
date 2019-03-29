@@ -1,8 +1,9 @@
 #
-# Module: 
-# - An Redshift cluster
+# Module to create:
+# - A Redshift cluster
 # - A Redshift subnet group
-# - A Redshift parameter group
+# - A Redshift parameter group 
+#
 
 # aws_redshift_cluster
 resource "aws_redshift_cluster" "main_redshift_cluster" {
